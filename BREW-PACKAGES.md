@@ -1,25 +1,24 @@
-ck
-awscli
-bat
-ffmpeg
-go
-htop
-jq
-kafka
-kops
-kubernetes-cli
-kubetail
-minidlna
-ncdu
-nmap
-pgcli
-redis-cli
-speedtest-cli
-swagger-codegen
-tig
-tmux
-tree
-unrar
-wget
-youtube-dl
-
+* ck
+* awscli
+* bat
+* ffmpeg
+* go
+* htop
+* jq
+* kafka
+* kops
+* kubernetes-cli
+* kubetail
+* minidlna
+* ncdu
+* nmap
+* pgcli
+* redis-cli
+* speedtest-cli
+* swagger-codegen
+* tig
+* tmux
+* tree
+* unrar
+* wget
+* youtube-dl
