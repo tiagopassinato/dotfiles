@@ -1,0 +1,5 @@
+alias cat=bat
+alias more=bat
+alias pico=vim
+alias k=kubectl
+alias dev="cd ~/Projects/airfox/dev-env"

@@ -1,0 +1,13 @@
+{
+  "extends": "semistandard",
+  "env": {
+  "node": true,
+  "es6": true,
+  "browser": true
+  },
+  "rules": {
+    "no-throw-literal": "off",
+    "keyword-spacing": [2],
+    "no-trailing-spaces": [2]
+  }
+ }
