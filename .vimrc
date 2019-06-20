@@ -10,15 +10,21 @@ Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'tomasiser/vim-code-dark'
 Plug 'leafgarland/typescript-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'dracula/vim'
 
 call plug#end()
 syntax on
 filetype plugin indent on
+
+" THEMES
 "colo seoul256
 "colo gruvbox
+colo codedark
+"colo dracula
+
 set t_Co=256
 set t_ut=
-colo codedark
 
 " Misc
 set relativenumber
@@ -40,3 +46,6 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" Mouse
+set mouse=v
+set clipboard+=unnamed
