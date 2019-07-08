@@ -27,8 +27,9 @@ set t_Co=256
 set t_ut=
 
 " Misc
-set relativenumber
+" set relativenumber
 set hlsearch
+set number
 
 " autocmd vimenter * NERDTree
 
