@@ -13,9 +13,9 @@ export TERM="xterm-256color"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
 #ZSH_THEME="gianu"
-
+ZSH_THEME=fwalch
 #powerlevel
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='nerdfont-complete'
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(nodeenv ip)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
@@ -77,8 +77,8 @@ plugins=(
   jsontools
   zsh-syntax-highlighting
   zsh-autosuggestions
+  autojump
 )
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -107,4 +107,11 @@ export NODE_ENV=local_development
 export PATH=/usr/local/sbin:/Users/tiagopassinato/Library/Python/2.7/bin:$PATH
 export DEFAULT_USER=`whoami`
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 #zprof
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

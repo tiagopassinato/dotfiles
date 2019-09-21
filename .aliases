@@ -1,10 +1,12 @@
-alias cat=bat
-alias more=bat
+#alias cat=bat
+#alias more=bat
 alias pico=vim
 alias k=kubectl
 
 alias dev="cd ~/Projects/airfox/dev-env"
 alias devserv="cd ~/Projects/airfox/dev-env/services"
+
+alias repl=jay
 
 # DOCKER
 alias dlogs='cd ~/Projects/airfox/dev-env; docker-compose logs -f -t'

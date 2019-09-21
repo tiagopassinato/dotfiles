@@ -2,16 +2,17 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 "Plug 'tpope/vim-sensible'
-Plug 'junegunn/seoul256.vim'
-Plug 'morhetz/gruvbox'
+"Plug 'junegunn/seoul256.vim'
+"Plug 'morhetz/gruvbox'
+"Plug 'dracula/vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
-Plug 'tomasiser/vim-code-dark'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
-Plug 'dracula/vim'
+Plug '/usr/local/opt/fzf'
 
 call plug#end()
 syntax on
@@ -25,6 +26,7 @@ colo codedark
 
 set t_Co=256
 set t_ut=
+
 
 " Misc
 " set relativenumber
