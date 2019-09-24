@@ -22,3 +22,6 @@
 * unrar
 * wget
 * youtube-dl
+* autojump
+* fzf
+
