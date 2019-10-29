@@ -1,3 +1,11 @@
+" Autoinstall vim-plug {{{
+if empty(glob('~/.nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+" }}}
+
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
@@ -13,6 +21,7 @@ Plug 'w0rp/ale'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 syntax on
