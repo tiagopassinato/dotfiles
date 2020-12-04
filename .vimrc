@@ -21,6 +21,7 @@ Plug 'w0rp/ale'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
@@ -41,6 +42,8 @@ set t_ut=
 " set relativenumber
 set hlsearch
 set number
+set cursorline
+
 
 " autocmd vimenter * NERDTree
 
@@ -58,6 +61,22 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+let mapleader = " "
+nnoremap <silent> <Leader><Space> :GFiles<CR>
+
+map <silent> <C-b> :NERDTreeToggle<CR>
+
 " Mouse
+" se mouse+=a
 set mouse=v
 set clipboard+=unnamed
+
+" Disable arrow keys - Get used to that, dude
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" vnoremap <up> <nop>
+" vnoremap <down> <nop>
+" vnoremap <left> <nop>
+" vnoremap <right> <nop>
