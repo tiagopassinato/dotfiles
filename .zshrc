@@ -28,3 +28,7 @@ zplug "akarzim/zsh-docker-aliases"
 
 
 export PATH="/Users/tiagopassinato/.oh-my-zsh/git-fuzzy/bin:$PATH"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
