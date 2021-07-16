@@ -1,4 +1,4 @@
-# Tiago's Personal dotfiles 
+# Personal dot files 
 
 ### vim-plug:
 ```
