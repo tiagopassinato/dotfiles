@@ -23,8 +23,13 @@ Plug 'vim-airline/vim-airline'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
-
+Plug 'ervandew/supertab'
+Plug 'moll/vim-node'
+Plug 'ternjs/tern_for_vim', { 'for' : 'javascript' }
 call plug#end()
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+
 syntax on
 filetype plugin indent on
 
@@ -43,7 +48,9 @@ set t_ut=
 set hlsearch
 set number
 set cursorline
-
+set cursorline
+set cursorcolumn
+set omnifunc=syntaxcomplete#Complete
 
 " autocmd vimenter * NERDTree
 
