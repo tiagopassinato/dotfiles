@@ -15,12 +15,13 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-export NODE_ENV=local_development
+export NODE_ENV=development
 export DEFAULT_USER=`whoami`
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 export PATH=$PATH:~/Library/Python/2.7/bin/
 export ANDROID_HOME=
+export EDITOR=vim
 # zplug loads
 zplug "akarzim/zsh-docker-aliases"
 

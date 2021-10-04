@@ -71,6 +71,10 @@ set shiftwidth=2
 let mapleader = " "
 nnoremap <silent> <Leader><Space> :GFiles<CR>
 
+nnoremap d "_d
+nnoremap D "_D
+vnoremap d "_d
+
 map <silent> <C-b> :NERDTreeToggle<CR>
 
 " Mouse

@@ -24,4 +24,6 @@
 * youtube-dl
 * autojump
 * fzf
+* broot
+
 

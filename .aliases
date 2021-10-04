@@ -1,10 +1,10 @@
-#alias cat=bat
-#alias more=bat
+alias cat=bat
+alias more=bat
 alias pico=vim
 alias k=kubectl
+alias qrdecode=zbarimg
 
-alias dev="cd ~/Projects/airfox/dev-env"
-alias devserv="cd ~/Projects/airfox/dev-env/services"
+alias dev="cd ~/Projects/onyx"
 
 alias repl=jay
 
