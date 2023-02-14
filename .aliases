@@ -11,11 +11,7 @@ alias app="cd ~/Projects/onyx/onyx-app"
 alias repl=jay
 
 # DOCKER
-alias dlogs='cd ~/Projects/onyx/monorepo; docker-compose logs -f --tail=50'
 alias dstop='docker stop $(docker ps -q)'
-
-alias awsssh='ssh -i ~/.ssh/awsEc2.pem ubuntu@ec2-18-234-115-153.compute-1.amazonaws.com'
-alias oraclessh='ssh opc@150.136.155.193'
 
 alias uuid='uuidgen | awk "{print tolower(\$0)}"'
 alias json='fx'
