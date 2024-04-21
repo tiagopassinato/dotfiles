@@ -48,7 +48,6 @@ set t_ut=
 set hlsearch
 set number
 set cursorline
-set cursorline
 set cursorcolumn
 set omnifunc=syntaxcomplete#Complete
 
@@ -80,7 +79,7 @@ map <silent> <C-b> :NERDTreeToggle<CR>
 " Mouse
 " se mouse+=a
 set mouse=v
-set clipboard+=unnamed
+set clipboard^=unnamed,unnamedplus
 
 " Disable arrow keys - Get used to that, dude
 " nnoremap <up> <nop>

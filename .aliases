@@ -2,20 +2,27 @@ alias cat=bat
 alias more=bat
 alias k=kubectl
 alias qrdecode=zbarimg
-alias ls=lsd
-alias space=duf
-
-alias dev="cd ~/Projects/onyx"
-alias app="cd ~/Projects/onyx/onyx-app"
-
+alias ls="exa"
+alias ll="exa --long --header --git --icons"
+alias free=duf
+alias v="fd --type f --hidden --exclude .git | fzf | xargs -o vim"
+alias vim=nvim
+alias ping=prettyping
 alias repl=jay
+alias tree="ll --tree --level=4 -a -I=.git --git-ignore"
+alias weather="curl wttr.in\?m\&format=4"
+alias vpn=/Users/tiagopassinato/Documents/Onyx/VPN/connect.sh
 
+alias j='z'
+
+alias batt="pmset -g batt | grep -Eo \"\d+%\""
 # DOCKER
 alias dlogs='cd ~/Projects/onyx/monorepo; docker-compose logs -f --tail=50'
 alias dstop='docker stop $(docker ps -q)'
 
-alias awsssh='ssh -i ~/.ssh/awsEc2.pem ubuntu@ec2-18-234-115-153.compute-1.amazonaws.com'
-alias oraclessh='ssh opc@150.136.155.193'
-
-alias uuid='uuidgen | awk "{print tolower(\$0)}"'
+alias uuid='uuidgen | awk "{printf tolower(\$0)}"'
 alias json='fx'
+
+# Video
+alias videomp4="echo ffmpeg -i $1 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p $1.mp4"
+
