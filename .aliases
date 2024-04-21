@@ -17,10 +17,10 @@ alias j='z'
 
 alias batt="pmset -g batt | grep -Eo \"\d+%\""
 # DOCKER
-alias dlogs='cd ~/Projects/onyx/monorepo; docker-compose logs -f --tail=50'
 alias dstop='docker stop $(docker ps -q)'
 
-alias uuid='uuidgen | awk "{printf tolower(\$0)}"'
+
+alias uuid='uuidgen | awk "{print tolower(\$0)}"'
 alias json='fx'
 
 # Video
