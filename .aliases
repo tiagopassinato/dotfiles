@@ -4,22 +4,18 @@ alias k=kubectl
 alias qrdecode=zbarimg
 alias ls="exa"
 alias ll="exa --long --header --git --icons"
-alias free=duf
+alias free="duf --only-mp /"
 alias v="fd --type f --hidden --exclude .git | fzf | xargs -o vim"
 alias vim=nvim
 alias ping=prettyping
 alias repl=jay
 alias tree="ll --tree --level=4 -a -I=.git --git-ignore"
 alias weather="curl wttr.in\?m\&format=4"
-alias vpn=/Users/tiagopassinato/Documents/Onyx/VPN/connect.sh
-
 alias j='z'
-
 alias batt="pmset -g batt | grep -Eo \"\d+%\""
 # DOCKER
 alias dstop='docker stop $(docker ps -q)'
-
-
+alias oraclessh='ssh opc@150.136.155.193'
 alias uuid='uuidgen | awk "{print tolower(\$0)}"'
 alias json='fx'
 
