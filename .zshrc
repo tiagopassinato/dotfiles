@@ -1,37 +1,14 @@
-export ZSH="/Users/tiagopassinato/.oh-my-zsh"
-export TERM="xterm-256color"
-ZSH_THEME="fwalch"
-plugins=(
-  git
-  node
-  npm
-  docker
-  jsontools
-  docker-compose
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  autojump
-  kubectl
-)
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+plugins=(git docker-compose zsh-autosuggestions zsh-syntax-highlighting fzf)
+
 source $ZSH/oh-my-zsh.sh
-source ~/.aliases
-export NODE_ENV=development
-export DEFAULT_USER=`whoami`
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
-export PATH=$PATH:~/Library/Python/2.7/bin/
-export ANDROID_HOME=
-export EDITOR=vim
-# zplug loads
-zplug "akarzim/zsh-docker-aliases"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-export PATH="/Users/tiagopassinato/.oh-my-zsh/git-fuzzy/bin:$PATH"
-
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /Users/tiagopassinato/.config/broot/launcher/bash/br
+eval "$(zoxide init zsh)"
+
+source ~/.aliases 
