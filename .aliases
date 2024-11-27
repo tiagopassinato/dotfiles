@@ -1,5 +1,5 @@
-alias cat=bat
-alias more=bat
+alias cat=batcat
+alias more=batcat
 alias k=kubectl
 alias qrdecode=zbarimg
 alias ls="exa"
