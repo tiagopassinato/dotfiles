@@ -10,4 +10,7 @@ source $ZSH/oh-my-zsh.sh
 eval "$(zoxide init zsh)"
 export NVM_DIR="$HOME/.nvm"
 source ~/.aliases 
-#source ~/.aliases-wsl
+
+if grep -iq "wsl" /proc/version; then
+    source ~/.aliases-wsl
+fi
