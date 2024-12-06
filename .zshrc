@@ -11,7 +11,7 @@ eval "$(zoxide init zsh)"
 export NVM_DIR="$HOME/.nvm"
 source ~/.aliases 
 
-if [ -d "/proc/version" ]; then 
+if [ -e "/proc/version" ]; then 
     if grep -iq "wsl" /proc/version; then
         source ~/.aliases-wsl
     fi
