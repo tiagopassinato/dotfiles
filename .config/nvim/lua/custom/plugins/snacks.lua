@@ -20,7 +20,7 @@ return {
       desc = 'Lazygit',
     },
     {
-      '<leader>y',
+      '<leader>t',
       function()
         Snacks.terminal()
       end,
